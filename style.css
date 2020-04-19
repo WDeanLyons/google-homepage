@@ -4,8 +4,11 @@ html {
 }
 
 /*Navbar Section*/
+
 #navbar {
     display: grid;
+    margin-left: 17px;
+    margin-right: 17px;
     grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
     grid-template-rows: 50px;
     grid-template-areas:
@@ -17,6 +20,9 @@ a {
     color: #5f6368;
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
+}
+a:hover {
+    text-decoration: underline;
 }
 
 #about {
@@ -43,14 +49,26 @@ a {
     grid-area: menu;
     justify-self: center;
     align-self: center;
+    margin-right: 10px;
 }
 #sign-in {
     grid-area: sign-in;
     justify-self: center;
     align-self: center;
+    text-align: center;
+    border-color: 1px solid #4285f4;
+    color: #fff;
+    background-color:  #4285f4;
+    height: 30px;
+    width: 63px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 28px;
+    border-radius: 2px;
 }
 
 /*Main Section*/
+
 #main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -68,10 +86,10 @@ a {
 }
 #search {
     grid-area: search;
-    height: 40px;
-    width: 470px;
-    border-radius: 20px;
-    border-color: rgba(0, 0, 0, 0.11);
+    height: 42px;
+    width: 580px;
+    border-radius: 24px;
+    border: 1px solid #dfe1e5;
     align-self: center;
     justify-self: center;
 }
@@ -90,22 +108,58 @@ a {
 }
 #google-search-btn {
     grid-area: google-search-btn;
-    justify-self: center;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-size: 14px;
+    justify-self: space-evenly;
     align-self: center;
+}
+#google-search-btn:hover {
+    border: 1px solid #c6c6c6;
+    color: #222;
 }
 #random-search-btn {
     grid-area: random-search-btn;
-    justify-self: center;
+    margin: 11px 4px;
+    padding: 0 16px;
+    line-height: 27px;
+    height: 36px;
+    min-width: 54px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+    font-size: 14px;
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    justify-self: space-evenly;
     align-self: center;
+}
+#random-search-btn:hover {
+    border: 1px solid #c6c6c6;
+    color: #222
 }
 
 /*Footer Section*/
+
 #footer {
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
     display: grid;
+    background-color: #f2f2f2;
     grid-template-columns: 80px 80px 130px 1fr 60px 60px 60px;
     grid-template-rows: 50px;
     grid-template-areas:
@@ -141,3 +195,4 @@ a {
     justify-self: left;
     align-self: center;
 }
+
