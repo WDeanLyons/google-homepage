@@ -3,6 +3,7 @@ html {
     min-height: 100%;
 }
 
+/*Navbar Section*/
 #navbar {
     display: grid;
     grid-template-columns: 50px 50px 1fr 50px 50px 50px 50px;
@@ -48,10 +49,12 @@ a {
     justify-self: center;
     align-self: center;
 }
+
+/*Main Section*/
 #main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 200px 70px 70px 200px;
+    grid-template-rows: 250px 70px 70px 250px;
     grid-template-areas:
     ". logo ."
     ". search ."
@@ -61,10 +64,27 @@ a {
 #logo {
     grid-area: logo;
     justify-self: center;
-    align-self: center;
+    align-self: end;
 }
 #search {
     grid-area: search;
+    height: 40px;
+    width: 470px;
+    border-radius: 20px;
+    border-color: rgba(0, 0, 0, 0.11);
+    align-self: center;
+    justify-self: center;
+}
+#search:hover {
+    box-shadow: 1px 1px 5px grey;
+}
+#search:focus {
+    box-shadow: 1px 1px 5px grey;
+}
+
+#flexbox {
+    display: flexbox;
+    grid-area: flexbox;
     justify-self: center;
     align-self: center;
 }
@@ -76,5 +96,48 @@ a {
 #random-search-btn {
     grid-area: random-search-btn;
     justify-self: center;
+    align-self: center;
+}
+
+/*Footer Section*/
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: grid;
+    grid-template-columns: 80px 80px 130px 1fr 60px 60px 60px;
+    grid-template-rows: 50px;
+    grid-template-areas:
+    "advertising business how-search-works . privacy terms settings";
+}
+#advertising {
+    grid-area: advertising;
+    justify-self: right;
+    align-self: center;
+}
+#business {
+    grid-area: business;
+    justify-self: right;
+    align-self: center;
+}
+#how-search-works {
+    grid-area: how-search-works;
+    justify-self: right;
+    align-self: center;
+}
+#privacy {
+    grid-area: privacy;
+    justify-self: left;
+    align-self: center;
+}
+#terms {
+    grid-area: terms;
+    justify-self: left;
+    align-self: center;
+}
+#settings {
+    grid-area: settings;
+    justify-self: left;
     align-self: center;
 }
